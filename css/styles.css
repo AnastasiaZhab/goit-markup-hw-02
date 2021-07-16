@@ -67,6 +67,11 @@ body {
 
 /*Портфолио*/
 
+button {
+  background-color: #f5f4fa;
+  color: var(--primary-text-color);
+}
+
 .portfolio-nav-button > button:hover {
   color: white;
   background-color: var(--accent-color);
