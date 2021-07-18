@@ -48,6 +48,9 @@ body {
   color: var(--accent-color);
 }
 
+.grey {
+  background-color: #f5f4fa;
+}
 .aside-link {
   text-decoration: none;
   font-size: 14px;
@@ -67,12 +70,21 @@ body {
 
 /*Портфолио*/
 
-button {
-  background-color: #f5f4fa;
-  color: var(--primary-text-color);
+.portfolio {
+  position: absolute
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.portfolio-nav-button > button:hover {
+.portfolio-nav-button > button:hover,
+.portfolio-nav-button > button:focus {
   color: white;
   background-color: var(--accent-color);
   cursor: pointer;
@@ -83,7 +95,7 @@ button {
 
 .portfolio-item:focus,
 .portfolio-item:hover {
-  background-color: var(--accent-color);
+  background-color: #eee;
 }
 
 .subtitle {
@@ -104,11 +116,13 @@ button {
 .portfolio-link {
   text-decoration: none;
 }
-button {
+.button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  background-color: #f5f4fa;
+  color: var(--primary-text-color);
 }
 
 /*Футтер*/
@@ -118,7 +132,7 @@ button {
 }
 
 .footer-link {
-  color: rgb(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
@@ -140,6 +154,7 @@ button {
   font-size: 44px;
   line-height: 1.364;
   color: #fff;
+  text-transform: uppercase;
 }
 .banner {
   background: #2f303a;
@@ -150,6 +165,7 @@ button {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
+  text-transform: uppercase;
 }
 .features-text {
   color: var(--secondary-text-color);
